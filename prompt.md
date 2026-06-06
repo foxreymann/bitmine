@@ -61,3 +61,65 @@ BitMine is a crypto treasury company. So:
 - Raise funds to buy more
 - Buy more $ETH
 - Stake $ETH to generate yield ( around 3.5% APY)
+
+#
+
+Now this on the next slide
+
+
+## THE ETH LOSS — ONE OF THE LARGEST IN HISTORY
+
+### The Numbers (at $1,555 ETH — current price as of research date)
+
+| Metric | Value | Source |
+|---|---|---|
+| ETH held | ~5.42 million ETH | SEC 8-K, June 1, 2026 |
+| Avg. cost basis (company-stated) | ~$2,840/ETH | Company press release, Nov 2025 |
+| Avg. cost basis (Lookonchain / on-chain analytics) | ~$3,821–$3,997/ETH | Lookonchain, Parameter.io |
+| Total capital deployed (estimated) | ~$16.4–$17.6 billion | Parameter.io, Gate.com analysis |
+| Current value at $1,555/ETH | ~$8.43 billion | Calculated |
+| **Unrealized loss at $1,555 ETH** | **~$8.0–$9.2 billion** | Calculated |
+| Peak unrealized loss (recorded) | $10.3 billion | KuCoin / Artemis data |
+
+NEXT SLIDE:
+
+# Comapny built on lies
+
+### The Cost Basis Discrepancy — A Material Red Flag
+
+BitMine publicly claimed an average purchase price of ~$2,840/ETH in November 2025.
+
+On-chain analytics firm **Lookonchain** calculated the true average at **~$3,997/ETH** from available transaction data — a 41% discrepancy. Multiple independent analysts arrived at $3,800–$4,000/ETH.
+
+**BitMine has never addressed this discrepancy or provided detailed accounting documentation for its Ethereum acquisitions.**
+
+# 
+
+Can you find source where Tom Lee of BitMine claims that ETH goes to crazy prices like $200k etc.
+
+# 
+
+change:
+
+Tom Lee's ETH predictions
+Chairman of $BMNR · Head of Research at Fundstrat · has a direct financial interest in ETH going up
+
+to:
+
+Tom Lee's ETH predictions
+Chairman of $BMNR · The face of BitMine
+
+#
+
+last slide:
+
+Video created for Pop The Bubble Hackathon 🫧
+
+put image and images for x profiles
+
+@arukanism · @zmzlois · @Lantos1618 · @dimplnotsimpl
+
+
+#
+
+we need second post for X
