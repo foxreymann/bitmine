@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$BMNR Goes to 0</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: monospace;
+      background: #000;
+      color: #fff;
+      width: 1920px;
+      height: 1080px;
+      overflow: hidden;
+    }
+
+    .slide {
+      width: 1920px;
+      height: 1080px;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .slide.active {
+      display: flex;
+    }
+
+    /* Slide 1 */
+    #slide-1 h1 {
+      font-size: 120px;
+      font-weight: 700;
+      letter-spacing: -2px;
+    }
+
+    /* Slide 2 */
+    #slide-2 {
+      align-items: flex-start;
+      padding: 120px 160px;
+    }
+
+    #slide-2 h2 {
+      font-size: 52px;
+      font-weight: 700;
+      margin-bottom: 80px;
+    }
+
+    #slide-2 ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+    }
+
+    #slide-2 ul li {
+      font-size: 46px;
+      display: flex;
+      align-items: baseline;
+      gap: 24px;
+    }
+
+    #slide-2 ul li::before {
+      content: '→';
+      color: #555;
+      flex-shrink: 0;
+    }
+
+    #slide-2 ul li span {
+      color: #aaa;
+    }
+
+    /* Navigation */
+    .nav {
+      position: fixed;
+      bottom: 32px;
+      right: 40px;
+      display: flex;
+      gap: 16px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .nav button {
+      background: none;
+      border: 1px solid #333;
+      color: #555;
+      padding: 6px 16px;
+      cursor: pointer;
+      font-family: monospace;
+      font-size: 14px;
+    }
+
+    .nav button:hover {
+      color: #fff;
+      border-color: #fff;
+    }
+
+    .slide-counter {
+      position: fixed;
+      bottom: 40px;
+      left: 40px;
+      font-size: 13px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="slide-1" class="slide active">
+    <h1>$BMNR goes to 0</h1>
+  </div>
+
+  <div id="slide-2" class="slide">
+    <h2>BitMine is a crypto treasury company</h2>
+    <ul>
+      <li>They buy cryptocurrency <span>$ETH</span></li>
+      <li>Raise funds to buy more</li>
+      <li>Buy more <span>$ETH</span></li>
+      <li>Stake <span>$ETH</span> to generate yield <span>~3.5% APY</span></li>
+    </ul>
+  </div>
+
+  <div class="slide-counter">
+    <span id="current">1</span> / <span id="total">1</span>
+  </div>
+
+  <div class="nav">
+    <button id="prev">← prev</button>
+    <button id="next">next →</button>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let current = 0;
+
+    function show(index) {
+      slides[current].classList.remove('active');
+      current = (index + slides.length) % slides.length;
+      slides[current].classList.add('active');
+      document.getElementById('current').textContent = current + 1;
+      document.getElementById('total').textContent = slides.length;
+    }
+
+    document.getElementById('next').addEventListener('click', () => show(current + 1));
+    document.getElementById('prev').addEventListener('click', () => show(current - 1));
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ') show(current + 1);
+      if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') show(current - 1);
+    });
+
+    document.getElementById('total').textContent = slides.length;
+  </script>
+
+</body>
+</html>
